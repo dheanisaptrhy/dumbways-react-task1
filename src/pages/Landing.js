@@ -14,7 +14,7 @@ function Landing(){
                         <img src={logo}/>
                     </div>
 
-                    <div className="greeting-content">
+                    <div className="greeting-content m">
                         <p className="">Sign-up now and subscribe to enjoy all the cool and latest books - The best book rental service provider in Indonesia</p>
                     </div>
 
