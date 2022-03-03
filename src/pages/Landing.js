@@ -8,7 +8,7 @@ function Landing(){
 
     return(
         <div className="main">
-            <Container className="main-main">
+            <div className="main-main">
                 <div className="content">
                     <div className="logo-content">
                         <img src={logo}/>
@@ -24,7 +24,7 @@ function Landing(){
                     </div>
                 </div>
                 
-            </Container>
+            </div>
         </div>    
     );
 }
