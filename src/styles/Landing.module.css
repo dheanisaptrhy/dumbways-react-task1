@@ -7,43 +7,29 @@
     background-image: url('../mockup/vector1.png');
     height: 100vh;
     background-size: cover;  
+    background-color: #F2f2f2;
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #F2f2f2;
 }
-/* .main-main{
-    display: flex;
-    justify-content: start;
-    align-items: center;
-    background-color: #D60000;
-} */
 
 .content{
     width: 50%;
 }
 
-.logo-content{
-    margin-bottom: 10px;
-}
-
-.greeting-content{
+.greetingContent{
     width: 80%;
-    margin-bottom: 65px;
-    margin-left: 20px;
+    margin: 20px 0 55px 20px;
 }
 
-.greeting-content p{
+.contentP{
     font-size: 24px;
 }
-
-/* button */
-.btn {
+.btn{
     display: flex;
     flex: row;
-    margin-left: 10px;
-    
 }
+/* button */
 .btn .button{
     border: none;
     padding: 10px 55px;
@@ -54,7 +40,7 @@
 .btn .signup{
     background-color: #D60000;
     color: white;
-    margin-right: 10px;
+    margin-right: 20px;
 }
 
 .btn .signup:hover{
