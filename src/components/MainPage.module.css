@@ -1,0 +1,24 @@
+.mainPage{
+    padding-top: 40px;
+    background-color: rgb(218, 37, 37);
+    width: 100%;
+}
+
+.cover{
+    box-shadow: 1px 1px 10px black;
+    border-radius: 5px;
+}
+
+.imageCover{
+    width: 100%;
+    border-radius: 5px;
+}
+
+.titleList{
+    margin: 20px 0;
+}
+
+.titleList h2{
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: 700;
+}

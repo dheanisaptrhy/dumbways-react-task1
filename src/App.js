@@ -4,6 +4,8 @@ import Landing from './pages/Landing'
 import {BrowserRouter as Router, Route, Routes, Link} from 'react-router-dom'
 import CardSignIn from './components/CardSignIn';
 import CardSignUp from './components/CardSignUp';
+import Home from './pages/Home';
+import DetailPage from './pages/DetailPage';
 
 function App() {
   return (
@@ -13,9 +15,12 @@ function App() {
         <Route exact path="/" element={<Landing/>}/>
         <Route exact path="/signin" element={<CardSignIn/>}/>
         <Route exact path="/signup" element={<CardSignUp/>}/>
+        <Route exact path="/home" element={<Home/>}/>
+        {/* <Route exact path="/profile" element={<Profile/>}/> */}
+        {/* <Route exact path="/detailBook" element={<DetailPage/>}/> */}
+
         {/* <Route exact path="/" element= {}>
           <Route exact path="/home" element={<Home/>}/>
-          <Route exact path="/profile" element={<Profile/>}/>
           <Route exact path="/subscribe" element={<Subscribe/>}/>
           
         </Route> */}

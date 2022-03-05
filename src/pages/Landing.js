@@ -5,6 +5,12 @@ import { Container, Button } from "react-bootstrap";
 
 function Landing(){
     const navigate = useNavigate();
+    const handleNavigateToSignIn = () => {
+        navigate("/signin");
+      };
+    const handleNavigateToSignUp = () => {
+        navigate("/signup");
+      };
 
     return(
         <div className={landingModule.main}>
@@ -19,11 +25,14 @@ function Landing(){
                     </div>
 
                     <Container className={landingModule.btn}>
-                        <Button className={`${landingModule.button} ${landingModule.signup}`}>Sign Up</Button>
-                        <Button className={`${landingModule.button} ${landingModule.signin}`}>Sign In</Button>
+                        <Button className={`${landingModule.button} ${landingModule.signup}`}
+                                onClick={handleNavigateToSignIn}>
+                                    Sign Up</Button>
+                        <Button className={`${landingModule.button} ${landingModule.signin}`}
+                                onClick={handleNavigateToSignUp}>
+                                    Sign In</Button>
                     </Container>
                 </div>
-                
             </div>
         </div>    
     );
