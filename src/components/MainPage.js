@@ -11,7 +11,7 @@ function MainPage() {
 		<div className={mainPage}>
 			<div>
 					<div className={cover}>
-							<img src={indexImage} className={imageCover}/>
+						<img src={indexImage} className={imageCover}/>
 					</div>
 				<div className={titleList}>
 					<h2>List Book</h2>

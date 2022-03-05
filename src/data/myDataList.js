@@ -1,39 +1,9 @@
-const contentData = [
-    {
-        id:1,
-        title:"Serangkai",
-        author:"Valerie Patkar",
-        book:"mockup/serangkai.png",
-        date:"Desember 20221",
-        pages:"123",
-        isbn:"",
-        about:""
-    },
-    {
-        id:2,
-        title:"Z1 - Sd/Mi Buku Siswa Tematik Tentang Pekerjaan",
-        author:"Afi Yustiyana",
-        book:"mockup/berbagai.png",
-        date:"September 2019",
-        pages:"",
-        isbn:"",
-        about:""
-    },
-    {
-        id:3,
-        title:"Kabar Rahasia Dari Alam Kubur",
-        author:"DR. Kamil Yusuf Al-Atum",
-        book:"mockup/kubur.png",
-        date:"June 2018",
-        pages:"",
-        isbn:"",
-        about:""
-    },
+const myDataList = [
     {
         id:4,
         title:"Tess on the Road",
         author:"Rachel Hartman",
-        book:"mockup/tessand.png",
+        book: require('../mockup/tessand.png').default,
         date:"April 2020",
         pages:"436",
         isbn:"9781789807554",
@@ -41,4 +11,4 @@ const contentData = [
     }
 ]
 
-export default contentData
+export default myDataList

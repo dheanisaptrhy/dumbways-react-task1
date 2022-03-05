@@ -26,7 +26,7 @@ function Navbar() {
             <img src={logo} className={imageLogo}/>
             </div>
             <div className={imageDiv}>
-                <img src={photoProfile} roundedCircle className={imageProfile}/>
+                <img src={photoProfile} className={imageProfile}/>
             </div>
             <div className={contentDiv}>
                 <p className={contentName}>Denis Putra</p>

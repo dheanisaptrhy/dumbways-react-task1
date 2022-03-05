@@ -6,6 +6,7 @@ import CardSignIn from './components/CardSignIn';
 import CardSignUp from './components/CardSignUp';
 import Home from './pages/Home';
 import SubscribePage from './pages/SubscribePage';
+import ProfilePage from './pages/ProfilePage';
 // import DetailPage from '../../DetailPage';
 
 function App() {
@@ -18,7 +19,7 @@ function App() {
         <Route exact path="/signup" element={<CardSignUp/>}/>
         <Route exact path="/home" element={<Home/>}/>
         <Route exact path="/subscribe" element={<SubscribePage/>}/>
-        {/* <Route exact path="/profile" element={<Profile/>}/> */}
+        <Route exact path="/profile" element={<ProfilePage/>}/>
         {/* <Route exact path="/detailBook" element={<DetailPage/>}/> */}
 
         {/* <Route exact path="/" element= {}>
