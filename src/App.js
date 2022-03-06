@@ -8,6 +8,9 @@ import Home from './pages/Home';
 import SubscribePage from './pages/SubscribePage';
 import ProfilePage from './pages/ProfilePage';
 import DetailPage from './pages/DetailPage';
+// import AdminBook from './pages/AdminBook';
+import AdminPage from './pages/AdminPage';
+
 
 function App() {
   return (
@@ -21,6 +24,10 @@ function App() {
         <Route exact path="/subscribe" element={<SubscribePage/>}/>
         <Route exact path="/profile" element={<ProfilePage/>}/>
         <Route exact path="/detailBook" element={<DetailPage/>}/>
+        <Route exact path="/adminHome" element={<AdminPage/>}/>
+
+
+        {/* <Route exact path="/adminAdd" element={<AdminBook/>}/> */}
 
         {/* <Route exact path="/" element= {}>
           <Route exact path="/home" element={<Home/>}/>
