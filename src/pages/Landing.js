@@ -1,17 +1,27 @@
 import landingModule from '../styles/Landing.module.css'
 import logo from '../mockup/Icon.png'
 import { useNavigate } from 'react-router-dom'
-import { Container, Button } from "react-bootstrap";
+import { Container, Button, Modal } from "react-bootstrap";
+import CardSignIn from '../components/CardSignIn'
+import CardSignUp from '../components/CardSignUp'
+import { useState } from 'react';
 
-function Landing(){
-    const navigate = useNavigate();
+function Landing() {
+    const [show, setShow] = useState(false);
+    const [show2, setShow2] = useState(false);
 
-    return(
+    const handleClose = () => setShow(false);
+    const handleShow = () => setShow(true);
+
+    const handleClose2 = () => setShow2(false);
+    const handleShow2 = () => setShow2(true);
+
+    return (
         <div className={landingModule.main}>
             <div>
                 <div className={landingModule.content}>
                     <div>
-                        <img src={logo}/>
+                        <img src={logo} />
                     </div>
 
                     <div className={landingModule.greetingContent}>
@@ -19,13 +29,30 @@ function Landing(){
                     </div>
 
                     <Container className={landingModule.btn}>
-                        <Button className={`${landingModule.button} ${landingModule.signup}`}>Sign Up</Button>
-                        <Button className={`${landingModule.button} ${landingModule.signin}`}>Sign In</Button>
+                        <Button className={`${landingModule.button} ${landingModule.signup}`}
+                            onClick={handleShow}>
+                            Sign Up
+                        </Button>
+                        <Modal show={show} onHide={handleClose} centered>
+                            <Modal.Body>
+                                <CardSignUp />
+                            </Modal.Body>
+                        </Modal>
+                        
+                        <Button className={`${landingModule.button} ${landingModule.signin}`}
+                            onClick={handleShow2}>
+                            Sign In
+                        </Button>
+                        <Modal show={show2} onHide={handleClose2} centered>
+                            <Modal.Body>
+                                <CardSignIn />
+                            </Modal.Body>
+                        </Modal>
                     </Container>
                 </div>
-                
+
             </div>
-        </div>    
+        </div>
     );
 }
 export default Landing;
