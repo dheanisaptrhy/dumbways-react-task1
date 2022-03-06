@@ -1,17 +1,22 @@
 import landingModule from '../styles/Landing.module.css'
 import logo from '../mockup/Icon.png'
 import { useNavigate } from 'react-router-dom'
-import { Container, Button } from "react-bootstrap";
+import { Container, Button, Modal } from "react-bootstrap";
+import CardSignIn from '../components/CardSignIn'
+import { useState } from 'react';
 
-function Landing(){
-    const navigate = useNavigate();
+function Landing() {
+    const [show, setShow] = useState(false);
 
-    return(
+    const handleClose = () => setShow(false);
+    const handleShow = () => setShow(true);
+
+    return (
         <div className={landingModule.main}>
             <div>
                 <div className={landingModule.content}>
                     <div>
-                        <img src={logo}/>
+                        <img src={logo} />
                     </div>
 
                     <div className={landingModule.greetingContent}>
@@ -20,12 +25,20 @@ function Landing(){
 
                     <Container className={landingModule.btn}>
                         <Button className={`${landingModule.button} ${landingModule.signup}`}>Sign Up</Button>
-                        <Button className={`${landingModule.button} ${landingModule.signin}`}>Sign In</Button>
+                        <Button className={`${landingModule.button} ${landingModule.signin}`}
+                            onClick={handleShow}>
+                            Sign In
+                        </Button>
+                        <Modal show={show} onHide={handleClose} centered>
+                            <Modal.Body>
+                                <CardSignIn/>
+                            </Modal.Body>
+                        </Modal>
                     </Container>
                 </div>
-                
+
             </div>
-        </div>    
+        </div>
     );
 }
 export default Landing;

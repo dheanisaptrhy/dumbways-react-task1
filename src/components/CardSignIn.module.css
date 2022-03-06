@@ -1,15 +1,8 @@
 *{
     font-family: "Avenir", Helvetica, sans-serif;
 }
-.main{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    background-color: #3434ac;
-}
+
 .miniContainer{
-    width: 25%;
     padding: 30px 30px 15px 30px;
     background-color: white;
     border-radius: 5px;
